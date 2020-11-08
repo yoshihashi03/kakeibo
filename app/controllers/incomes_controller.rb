@@ -4,11 +4,25 @@ class IncomesController < ApplicationController
   end
 
   def show
+  	@income = Income.find(params[:id])
   end
 
   def new
+  	@income = Income.new()
   end
 
   def edit
+  	@income = Income.find(params[:id])
   end
+
+  def creat
+  	
+  end
+
+  def update
+  	
+  end
+
+
 end
+
