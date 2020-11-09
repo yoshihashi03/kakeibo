@@ -1,2 +1,5 @@
-<h1>Incomes#new</h1>
-<p>Find me in app/views/incomes/new.html.erb</p>
+<h2>収入科目登録</h2>
+<%= form_for @income do |form| %>
+	<%= render "form", form: form %>
+	<div><%= form.submit %></div>
+<% end %>
